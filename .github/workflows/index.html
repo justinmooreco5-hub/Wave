@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:Calibri; font-size:12pt }
+			p { margin:0pt }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;!DOCTYPE html&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;html&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;head&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;meta charset="UTF-8"&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;title&gt;The Executive – Flex Meta Tool&lt;/title&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;style&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">body { background:#0d0d0d; color:#eee; font-family:Arial; padding:20px }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">select, button { padding:6px; margin:4px }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">.panel { border:1px solid #444; padding:12px; margin-top:12px }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">.green { color:#4CAF50 }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">.yellow { color:#FFC107 }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">.orange { color:#FF9800 }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">.red { color:#F44336 }</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/style&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/head&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;body&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;h1&gt;🎬 The Executive – Flex Meta Tool&lt;/h1&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Primary Genre:&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;select id="genre1"&gt;&lt;/select&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Secondary Genre (optional):&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;select id="genre2"&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value=""&gt;None&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/select&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Theme:&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;select id="theme"&gt;&lt;/select&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Budget Tier:&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;select id="budget"&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value="low"&gt;Low&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value="mid"&gt;Mid&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value="high"&gt;High&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/select&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Focus:&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;select id="focus"&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value="profit"&gt;Profit&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;option value="award"&gt;Awards&lt;/option&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/select&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;label&gt;&lt;input type="checkbox" id="sequel"&gt; Sequel&lt;/label&gt;&lt;br&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;button onclick="analyze()"&gt;Analyze&lt;/button&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;button onclick="bestCombo()"&gt;Best Combo&lt;/button&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;button onclick="generateTitle()"&gt;Generate Title&lt;/button&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;div id="output" class="panel"&gt;&lt;/div&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;script&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">const genres = ["Action","Adventure","Comedy","Drama","Thriller","Horror","Sci-Fi","Fantasy","Romance","Animation"];</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">const themes = ["Crime","War","Time Travel","Space","Supernatural","Politics","Sports","Teen","Biography","Apocalypse","Mystery","Family"];</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">genres.forEach(g=&gt;{</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">genre1.add(new Option(g,g));</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">genre2.add(new Option(g,g));</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">});</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">themes.forEach(t=&gt;theme.add(new Option(t,t)));</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function baseAffinity(genre, theme){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const map={</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Action:["Crime","War","Apocalypse"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Adventure:["Fantasy","Family","Mystery"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Comedy:["Teen","Family","Romance"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Drama:["Politics","Biography","War"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Thriller:["Crime","Mystery","Politics"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Horror:["Supernatural","Apocalypse"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">"Sci-Fi":["Time Travel","Space","Apocalypse"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Fantasy:["Adventure","Family"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Romance:["Teen","Drama"],</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">Animation:["Family","Fantasy","Comedy"]</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">};</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">return map[genre]?.includes(theme) ? 30 : 0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function calculateScore(g1,g2,t){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">let score=50;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">score+=baseAffinity(g1,t);</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(g2){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">score+=baseAffinity(g2,t);</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">score-=10; // dual-genre cohesion tax</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(g1===g2) score-=20;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">return Math.max(20,Math.min(100,score));</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function color(score){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(score&gt;=85) return "green";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(score&gt;=65) return "yellow";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(score&gt;=45) return "orange";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">return "red";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function analyze(){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const g1=genre1.value, g2=genre2.value, t=theme.value;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const b=budget.value, f=focus.value, s=sequel.checked;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const score=calculateScore(g1,g2,t);</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">let rating="PG-13";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(f==="award"||g1==="Drama") rating="R";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(g1==="Animation"||t==="Family") rating="PG";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">let sliders = score&gt;=70 ? "Balanced" : "Story-heavy";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(f==="award") sliders="Artistic 80% / Story 85%";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(s) sliders+=", Commercial +10%";</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">let premium=[];</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(b!=="low") premium.push("Dolby Sound");</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(b==="high") premium.push("A-List Cast");</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(score&gt;=80) premium.push("Targeted Marketing");</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(f==="award") premium.push("Award Campaign");</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">output.innerHTML=`</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;h3&gt;Analysis&lt;/h3&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Suitability:&lt;/b&gt; &lt;span class="${color(score)}"&gt;${score}/100&lt;/span&gt;&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Rating:&lt;/b&gt; ${rating}&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Sliders:&lt;/b&gt; ${sliders}&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Premium Features:&lt;/b&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;ul&gt;${premium.map(p=&gt;`&lt;li&gt;${p}&lt;/li&gt;`).join("")}&lt;/ul&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">`;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function bestCombo(){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">let best={score:0};</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">genres.forEach(g1=&gt;{</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">genres.concat([""]).forEach(g2=&gt;{</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">themes.forEach(t=&gt;{</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const s=calculateScore(g1,g2,t);</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">if(s&gt;best.score){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">best={g1,g2,t,score:s};</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">});</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">});</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">});</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">output.innerHTML=`</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;h3&gt;🏆 Best Suggested Combo&lt;/h3&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Genre:&lt;/b&gt; ${best.g1}${best.g2?` / ${best.g2}`:""}&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Theme:&lt;/b&gt; ${best.t}&lt;br&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">&lt;b&gt;Suitability:&lt;/b&gt; &lt;span class="${color(best.score)}"&gt;${best.score}/100&lt;/span&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">`;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">function generateTitle(){</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const a=["Last","Silent","Dark","Final","Broken","Hidden"];</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">const b=["Legacy","World","Timeline","City","Truth","Stars"];</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0; </span></strong><strong><span style="font-family:Helvetica-Bold; ">output.innerHTML=`&lt;h3&gt;🎲 Title&lt;/h3&gt;&lt;b&gt;${a[Math.random()*a.length|0]} ${b[Math.random()*b.length|0]}&lt;/b&gt;`;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">}</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/script&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/body&gt;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&lt;/html&gt;</span></strong>
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a><span style="font-size:11px; color: #d0d0d0"> | </span><a href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Document Converter for Windows</a></p>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4581d6a58cf94e929fad52deda295622","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
