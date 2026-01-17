@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Executive – Flex Meta Tool</title>
+<style>
+body { background:#0d0d0d; color:#eee; font-family:Arial; padding:20px }
+select, button { padding:6px; margin:4px }
+.panel { border:1px solid #444; padding:12px; margin-top:12px }
+.green { color:#4CAF50 }
+.yellow { color:#FFC107 }
+.orange { color:#FF9800 }
+.red { color:#F44336 }
+</style>
+</head>
+<body>
+
+<h1>🎬 The Executive – Flex Meta Tool</h1>
+
+Primary Genre:<br>
+<select id="genre1"></select><br>
+
+Secondary Genre (optional):<br>
+<select id="genre2">
+<option value="">None</option>
+</select><br>
+
+Theme:<br>
+<select id="theme"></select><br>
+
+Budget Tier:<br>
+<select id="budget">
+<option value="low">Low</option>
+<option value="mid">Mid</option>
+<option value="high">High</option>
+</select><br>
+
+Focus:<br>
+<select id="focus">
+<option value="profit">Profit</option>
+<option value="award">Awards</option>
+</select><br>
+
+<label><input type="checkbox" id="sequel"> Sequel</label><br><br>
+
+<button onclick="analyze()">Analyze</button>
+<button onclick="bestCombo()">Best Combo</button>
+<button onclick="generateTitle()">Generate Title</button>
+
+<div id="output" class="panel"></div>
+
+<script>
+const genres = ["Action","Adventure","Comedy","Drama","Thriller","Horror","Sci-Fi","Fantasy","Romance","Animation"];
+const themes = ["Crime","War","Time Travel","Space","Supernatural","Politics","Sports","Teen","Biography","Apocalypse","Mystery","Family"];
+
+genres.forEach(g=>{
+  genre1.add(new Option(g,g));
+  genre2.add(new Option(g,g));
+});
+themes.forEach(t=>theme.add(new Option(t,t)));
+
+function baseAffinity(genre, theme){
+  const map={
+    Action:["Crime","War","Apocalypse"],
+    Adventure:["Fantasy","Family","Mystery"],
+    Comedy:["Teen","Family","Romance"],
+    Drama:["Politics","Biography","War"],
+    Thriller:["Crime","Mystery","Politics"],
+    Horror:["Supernatural","Apocalypse"],
+    "Sci-Fi":["Time Travel","Space","Apocalypse"],
+    Fantasy:["Adventure","Family"],
+    Romance:["Teen","Drama"],
+    Animation:["Family","Fantasy","Comedy"]
+  };
+  return map[genre]?.includes(theme) ? 30 : 0;
+}
+
+function calculateScore(g1,g2,t){
+  let score=50;
+  score+=baseAffinity(g1,t);
+  if(g2){
+    score+=baseAffinity(g2,t);
+    score-=10; // dual-genre cohesion tax
+    if(g1===g2) score-=20;
+  }
+  return Math.max(20,Math.min(100,score));
+}
+
+function color(score){
+  if(score>=85) return "green";
+  if(score>=65) return "yellow";
+  if(score>=45) return "orange";
+  return "red";
+}
+
+function analyze(){
+  const g1=genre1.value, g2=genre2.value, t=theme.value;
+  const b=budget.value, f=focus.value, s=sequel.checked;
+  const score=calculateScore(g1,g2,t);
+
+  let rating="PG-13";
+  if(f==="award"||g1==="Drama") rating="R";
+  if(g1==="Animation"||t==="Family") rating="PG";
+
+  let sliders = score>=70 ? "Balanced" : "Story-heavy";
+  if(f==="award") sliders="Artistic 80% / Story 85%";
+  if(s) sliders+=", Commercial +10%";
+
+  let premium=[];
+  if(b!=="low") premium.push("Dolby Sound");
+  if(b==="high") premium.push("A-List Cast");
+  if(score>=80) premium.push("Targeted Marketing");
+  if(f==="award") premium.push("Award Campaign");
+
+  output.innerHTML=`
+    <h3>Analysis</h3>
+    <b>Suitability:</b> <span class="${color(score)}">${score}/100</span><br>
+    <b>Rating:</b> ${rating}<br>
+    <b>Sliders:</b> ${sliders}<br>
+    <b>Premium Features:</b>
+    <ul>${premium.map(p=>`<li>${p}</li>`).join("")}</ul>
+  `;
+}
+
+function bestCombo(){
+  let best={score:0};
+  genres.forEach(g1=>{
+    genres.concat([""]).forEach(g2=>{
+      themes.forEach(t=>{
+        const s=calculateScore(g1,g2,t);
+        if(s>best.score){
+          best={g1,g2,t,score:s};
+        }
+      });
+    });
+  });
+  output.innerHTML=`
+    <h3>🏆 Best Suggested Combo</h3>
+    <b>Genre:</b> ${best.g1}${best.g2?` / ${best.g2}`:""}<br>
+    <b>Theme:</b> ${best.t}<br>
+    <b>Suitability:</b> <span class="${color(best.score)}">${best.score}/100</span>
+  `;
+}
+
+function generateTitle(){
+  const a=["Last","Silent","Dark","Final","Broken","Hidden"];
+  const b=["Legacy","World","Timeline","City","Truth","Stars"];
+  output.innerHTML=`<h3>🎲 Title</h3><b>${a[Math.random()*a.length|0]} ${b[Math.random()*b.length|0]}</b>`;
+}
+</script>
+
+</body>
+</html>
